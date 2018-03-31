@@ -1,0 +1,22 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 17
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.aaa.testing.sample.iap.subscriptionpaidterms"
+        minSdkVersion 10
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation files('/Users/sisahani/StudioProjects/SampleIAPSubscriptionsApp/libs/in-app-purchasing-2.0.76.jar')
+}
